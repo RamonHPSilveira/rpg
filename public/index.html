@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Formulário</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" media="all" href="./stylesheets/style.css"/>
+
+</head>
+<body class ="body">
+	<header>
+		<img class="dragon" src="./images/dragon.jpg">
+	</header>
+	<nav class="sidebar">
+		<a href="" class="active">Home</a>
+		<a href="">a1</a>
+		<a href="">a2</a>
+		<a href="">a3</a>
+	</nav>
+	<div class="container">
+		<form action ="http://127.0.0.1:3000/monsters" method = "POST">
+			<div class = "form-row">
+				<div class="form-group col-md-6">
+					<label>Quantidade de inimigos</label>
+					<input class="form-control js-input" name ="numberEnimies"placeholder="Digite a quantidade de inimigos no combate">
+				</div>
+				<div class="form-group col-md-6">
+					<label class ="js-label-name" id="js-label-name">Nome do Personagem</label>
+					<input class="form-control js-input-name" name = "CharName" id="js-input-name" placeholder="Digite um nome">
+				</div>
+				<div class="form-check form-check-inline" >
+					<input class="form-check-input" type="checkbox" name="randomName" id="randomName" value="option1">
+					<label class="form-check-label">
+						Nome aleatório
+					</label>
+				</div>
+				<div class="form-group col-md-1">
+					<label>Nível</label>
+					<select class="form-control js-select-data" name="level">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+						<option>16</option>
+						<option>17</option>
+						<option>18</option> 
+						<option>19</option>
+						<option>20</option>
+					</select>
+				</div>
+			</div>
+			
+			<div class ="form-row">				
+				<div class ="form-group col-md-6">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="caracteristicas" id="Defeito" value="defect">
+						<label class="form-check-label">
+							Defeito
+						</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="caracteristicas" id="Qualidade" value="quality">
+						<label class="form-check-label" >
+							Qualidade
+						</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="caracteristicas" id="both" value="both">
+						<label class="form-check-label">
+							Ambos
+						</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="caracteristicas" id="neither" value="none">
+						<label class="form-check-label">
+							Nenhum
+						</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="caracteristicas" id="randomCaract" value="random">
+						<label class="form-check-label">
+							Aleatório
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class ="form-row">
+				<div class ="form-group col-md-12">
+					<h6>Classe</h6>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="classe" id="sorcerer" value="sorcerer">
+						<label class="form-check-label">
+							Feiticeiro
+						</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="classe" id="mage" value="mage">
+						<label class="form-check-label">
+							Mago
+						</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="classe" id="ranger" value="ranger">
+						<label class="form-check-label">
+							Ranger
+						</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="classe" id="warrior" value="warrior">
+						<label class="form-check-label">
+							Guerreiro
+						</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="classe" id="noClass" value="noClass">
+						<label class="form-check-label">
+							Nenhuma
+						</label>
+					</div>
+				</div>
+				<div class ="form-group col-md-12">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="classe" id="barbarian" value="barbarian">
+						<label class="form-check-label">
+							Bárbaro
+						</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="classe" id="thief" value="thief">
+						<label class="form-check-label">
+							Ladino
+						</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="classe" id="druid" value="druid">
+						<label class="form-check-label">
+							Druida
+						</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="classe" id="bard" value="bard">
+						<label class="form-check-label">
+							Bardo
+						</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="classe" id="randomClass" value="randomClass">
+						<label class="form-check-label">
+							Aleatória
+						</label>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="form-group">
+				<label>Terreno</label>
+				<select class="form-control js-select-sname" name="terrain">
+					<option>Aquático</option>
+					<option>Montanhoso</option>
+					<option>Planície</option>
+					<option>Pântano</option>
+					<option>Floresta</option> 
+					<option>Aleatório</option>
+				</select>
+			</div>
+
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="tipoTerreno" id="nevado" value="nevado">
+				<label class="form-check-label">
+					Nevado
+				</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="tipoTerreno" id="quente" value="quente">
+				<label class="form-check-label">
+					Quente
+				</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="tipoTerreno" id="regular" value="regular">
+				<label class="form-check-label">
+					Regular
+				</label>
+			</div>
+			<input type="Submit" class="button js-click" value="Submit">
+
+		</form>
+	</div>
+	<br> <br>	
+
+
+</div>
+<footer>
+	
+	<div class ="row foot">
+		<div class="col">
+			<span>Abracadabra</span>
+		</div>
+		<div class="col">
+			<span>Contato</span>
+		</div>
+		<div class="col">
+			<span>Abriu</span>
+		</div>
+	</div>
+</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript" src ="./javascripts/main.js"></script>
+
+</body>
+</html>	
