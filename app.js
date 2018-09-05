@@ -10,6 +10,14 @@ var monstersRouter = require('./routes/monsters');
 
 var app = express();
 
+//Set up mongoose connection
+// var mongoose = require('mongoose');
+// var mongoDB = 'mongodb://juliobk:projetorpg8@ds227332.mlab.com:27332/monsters8';
+// mongoose.connect(mongoDB, { useNewUrlParser: true });
+// mongoose.Promise = global.Promise;
+// var db = mongoose.connection;
+// db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
