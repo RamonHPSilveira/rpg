@@ -1,0 +1,11 @@
+{
+     "db": {
+         "mongodb": "mongodb://localhost/atlantus"
+     },
+     "server": {
+         "port": 8080
+     },
+     "app": {
+         "url": "http://localhost:3000"
+     }
+}

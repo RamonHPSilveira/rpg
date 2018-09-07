@@ -1,0 +1,32 @@
+{
+  "name": "rpg",
+  "version": "1.0.0",
+  "description": "this rpg tool will help you to create random events and monsters",
+  "main": "rpg_api.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamonHPSilveira/rpg.git"
+  },
+  "keywords": [
+    "rpg"
+  ],
+  "author": "Ramon and Julio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RamonHPSilveira/rpg/issues"
+  },
+  "homepage": "https://github.com/RamonHPSilveira/rpg#readme",
+  "dependencies": {
+    "config": "*",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "mongoose": "^5.2.13"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
